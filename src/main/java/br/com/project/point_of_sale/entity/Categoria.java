@@ -23,4 +23,13 @@ public class Categoria {
 
     @Column(name="nome")
     private String nome;
+
+    public Integer getIdCategoria() {
+        return idCategoria;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+ 
 }
