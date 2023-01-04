@@ -1,7 +1,6 @@
 package br.com.project.point_of_sale.entity;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
