@@ -64,5 +64,6 @@ public class Compra {
     public void setSituacaoCompra(String situacaoCompra) {
         this.situacaoCompra = situacaoCompra;
     }
+    
 
 }
