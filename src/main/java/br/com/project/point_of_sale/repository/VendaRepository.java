@@ -1,5 +1,11 @@
 package br.com.project.point_of_sale.repository;
 
-public interface VendaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.project.point_of_sale.entity.Venda;
+
+@Repository
+public interface VendaRepository extends JpaRepository<Venda, Integer> {
     
 }

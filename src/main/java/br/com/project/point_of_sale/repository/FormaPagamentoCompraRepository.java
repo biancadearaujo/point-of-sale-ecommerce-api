@@ -1,5 +1,11 @@
 package br.com.project.point_of_sale.repository;
 
-public interface FormaPagamentoCompraRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.project.point_of_sale.entity.FormaPagamentoCompra;
+
+@Repository
+public interface FormaPagamentoCompraRepository extends JpaRepository<FormaPagamentoCompra, Integer>{
     
 }
