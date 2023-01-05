@@ -1,5 +1,11 @@
 package br.com.project.point_of_sale.repository;
 
-public interface ContaReceberRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.project.point_of_sale.entity.ContaReceber;
+
+@Repository
+public interface ContaReceberRepository extends JpaRepository<ContaReceber, Integer>{
     
 }
