@@ -39,6 +39,9 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario")
     private List<Endereco>endereco;
 
+    @OneToMany(mappedBy = "usuario")
+    private List<Produto>produto;
+
     public Integer getIdUsuario() {
         return idUsuario;
     }
@@ -85,6 +88,14 @@ public class Usuario {
 
     public void setEndereco(List<Endereco> endereco) {
         this.endereco = endereco;
+    }
+
+    public List<Produto> getProduto() {
+        return produto;
+    }
+
+    public void setProduto(List<Produto> produto) {
+        this.produto = produto;
     }
 
 }
