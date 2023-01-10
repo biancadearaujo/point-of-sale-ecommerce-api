@@ -1,10 +1,13 @@
 package br.com.project.point_of_sale.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -32,6 +35,9 @@ public class Usuario {
 
     @Column(name="email")
     private String email;
+
+    @OneToMany(mappedBy = "usuario")
+    private List<Endereco>endereco;
 
     public Integer getIdUsuario() {
         return idUsuario;
@@ -71,6 +77,14 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Endereco> getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(List<Endereco> endereco) {
+        this.endereco = endereco;
     }
 
 }
