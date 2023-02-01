@@ -43,9 +43,9 @@ public class Produto {
     @JoinColumn(name="id_categoria")
     private Categoria categoria;
 
-    @ManyToOne
+   /* @ManyToOne
     @JoinColumn(name = "id_usuario")
-    private Usuario usuario;
+    private Usuario usuario;*/
 
     //id fornecedor
     //idCategoria
@@ -94,12 +94,12 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public Usuario getUsuario() {
+    /*public Usuario getUsuario() {
         return usuario;
     }
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
-    }
+    }*/
 
 }
