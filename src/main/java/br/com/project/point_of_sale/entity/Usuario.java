@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -24,7 +26,9 @@ public class Usuario {
     @Column(name="id_usuario")
     private Integer idUsuario;
     
-    @Column(name="nome")
+    @NotBlank(message = "Preencha a descrição")
+    @Size(max = 40, message = "Tamanho máximo 40")
+    @Column(name="nome", nullable = false, length = 40)
     private String nome;
 
     @Column(name="cpf_cnpj")
@@ -36,11 +40,14 @@ public class Usuario {
     @Column(name="email")
     private String email;
 
-    @OneToMany(mappedBy = "usuario")
-    private List<Endereco>endereco;
+    /*@Column(name="senha")
+    private String senha;*/
 
-    @OneToMany(mappedBy = "usuario")
-    private List<Produto>produto;
+/*    @OneToMany(mappedBy = "usuario")
+    private List<Endereco>endereco;
+*/
+    /*@OneToMany(mappedBy = "usuario")
+    private List<Produto>produto;*/
 
     public Integer getIdUsuario() {
         return idUsuario;
@@ -82,20 +89,29 @@ public class Usuario {
         this.email = email;
     }
 
+    /*public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }*/
+
+/*
     public List<Endereco> getEndereco() {
         return endereco;
     }
 
     public void setEndereco(List<Endereco> endereco) {
         this.endereco = endereco;
-    }
+    }*/
 
-    public List<Produto> getProduto() {
+    /*public List<Produto> getProduto() {
         return produto;
     }
 
     public void setProduto(List<Produto> produto) {
         this.produto = produto;
-    }
+    }*/
 
 }
