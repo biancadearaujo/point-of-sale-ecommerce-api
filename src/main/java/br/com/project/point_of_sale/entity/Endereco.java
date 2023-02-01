@@ -44,10 +44,10 @@ public class Endereco {
     @Column(name="cidade")
     private String cidade;
 
-    @ManyToOne
+    /*@ManyToOne
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
-
+*/
     public Integer getIdEndereco() {
         return idEndereco;
     }
@@ -111,7 +111,7 @@ public class Endereco {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
-
+/*
     public Usuario getUsuario() {
         return usuario;
     }
@@ -119,5 +119,5 @@ public class Endereco {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
-
+*/
 }
