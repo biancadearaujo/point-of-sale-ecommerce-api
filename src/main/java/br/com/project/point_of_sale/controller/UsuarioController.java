@@ -2,8 +2,6 @@ package br.com.project.point_of_sale.controller;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,7 +47,7 @@ public class UsuarioController {
     
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<UsuarioDto> saveUsuario(@Valid @RequestBody UsuarioInserirDto usuarioInserirDto){
+    public ResponseEntity<UsuarioDto> saveUsuario(@RequestBody UsuarioInserirDto usuarioInserirDto){
        
         return ResponseEntity.status(HttpStatus.OK).body(usuarioService.saveUsuario(usuarioInserirDto));
 
@@ -57,7 +55,7 @@ public class UsuarioController {
 
 
     @PutMapping("/{id}")
-    public ResponseEntity<UsuarioDto>updateUsuario(@Valid @PathVariable Integer id,
+    public ResponseEntity<UsuarioDto>updateUsuario(@PathVariable Integer id,
     @RequestBody UsuarioInserirDto usuarioInserirDto){
         
         if(usuarioService.updateUsuario(usuarioInserirDto, id) != null){
