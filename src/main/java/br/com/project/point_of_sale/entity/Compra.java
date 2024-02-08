@@ -1,24 +1,12 @@
 package br.com.project.point_of_sale.entity;
-
-import java.time.LocalDate;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
+/*
 @JsonIdentityInfo
 (generator = ObjectIdGenerators.PropertyGenerator.class, property = "idCompra")
 
 @Entity
-@Table(name="compra")
+@Table(name="compra")*/
 public class Compra {
-    @Id
+  /*  @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name="id_compra")
     private Integer idCompra;
@@ -65,5 +53,5 @@ public class Compra {
         this.situacaoCompra = situacaoCompra;
     }
     
-
+*/
 }

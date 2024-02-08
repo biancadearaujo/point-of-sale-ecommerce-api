@@ -1,0 +1,14 @@
+CREATE TABLE users (
+    id_user SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255),
+    login VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    phone_number VARCHAR(20),
+    avatar_url VARCHAR(255),
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    verification_token VARCHAR(255)
+);

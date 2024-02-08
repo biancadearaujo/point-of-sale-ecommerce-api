@@ -1,44 +1,34 @@
 package br.com.project.point_of_sale.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+// @JsonIdentityInfo
+// (generator = ObjectIdGenerators.PropertyGenerator.class, property = "idFormaPagamentoVenda")
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
-@JsonIdentityInfo
-(generator = ObjectIdGenerators.PropertyGenerator.class, property = "idFormaPagamentoVenda")
-
-@Entity
-@Table(name="forma_pagamento_venda")
+// @Entity
+// @Table(name="forma_pagamento_venda")
 public class FormaPagamentoVenda {
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column(name="id_forma_pagamento_venda")
-    private Integer idFormaPagamentoVenda;
-    //idFormaPagamentoVenda
+    // @Id
+    // @GeneratedValue (strategy = GenerationType.IDENTITY)
+    // @Column(name="id_forma_pagamento_venda")
+    // private Integer idFormaPagamentoVenda;
+    // //idFormaPagamentoVenda
 
-    @Column(name="valor")
-    private double valor;
+    // @Column(name="valor")
+    // private double valor;
 
-    public Integer getIdFormaPagamentoVenda() {
-        return idFormaPagamentoVenda;
-    }
+    // public Integer getIdFormaPagamentoVenda() {
+    //     return idFormaPagamentoVenda;
+    // }
 
-    public void setIdFormaPagamentoVenda(Integer idFormaPagamentoVenda) {
-        this.idFormaPagamentoVenda = idFormaPagamentoVenda;
-    }
+    // public void setIdFormaPagamentoVenda(Integer idFormaPagamentoVenda) {
+    //     this.idFormaPagamentoVenda = idFormaPagamentoVenda;
+    // }
 
-    public double getValor() {
-        return valor;
-    }
+    // public double getValor() {
+    //     return valor;
+    // }
 
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
+    // public void setValor(double valor) {
+    //     this.valor = valor;
+    // }
  
 }

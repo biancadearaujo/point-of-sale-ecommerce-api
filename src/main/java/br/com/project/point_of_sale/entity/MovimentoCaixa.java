@@ -1,89 +1,77 @@
 package br.com.project.point_of_sale.entity;
 
-import java.time.LocalDate;
+// @JsonIdentityInfo
+// (generator = ObjectIdGenerators.PropertyGenerator.class, property = "idMovimentoCaixa")
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
-@JsonIdentityInfo
-(generator = ObjectIdGenerators.PropertyGenerator.class, property = "idMovimentoCaixa")
-
-@Entity
-@Table(name="movimento_caixa")
+// @Entity
+// @Table(name="movimento_caixa")
 public class MovimentoCaixa {
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column(name="id_movimento_caixa")
-    private Integer idMovimentoCaixa;
+    // @Id
+    // @GeneratedValue (strategy = GenerationType.IDENTITY)
+    // @Column(name="id_movimento_caixa")
+    // private Integer idMovimentoCaixa;
 
-    @Column(name="numero_movimento")
-    private Integer numeroMovimento;
+    // @Column(name="numero_movimento")
+    // private Integer numeroMovimento;
 
-    @Column(name="data_movimento")
-    private LocalDate dataMovimento;
+    // @Column(name="data_movimento")
+    // private LocalDate dataMovimento;
 
-    @Column(name="descricao")
-    private String descricao;
+    // @Column(name="descricao")
+    // private String descricao;
 
-    @Column(name="tipo_movimento")
-    private String tipoMovimento;
+    // @Column(name="tipo_movimento")
+    // private String tipoMovimento;
 
-    @Column(name="valor")
-    private double valor;
+    // @Column(name="valor")
+    // private double valor;
 
-    public Integer getIdMovimentoCaixa() {
-        return idMovimentoCaixa;
-    }
+    // public Integer getIdMovimentoCaixa() {
+    //     return idMovimentoCaixa;
+    // }
 
-    public void setIdMovimentoCaixa(Integer idMovimentoCaixa) {
-        this.idMovimentoCaixa = idMovimentoCaixa;
-    }
+    // public void setIdMovimentoCaixa(Integer idMovimentoCaixa) {
+    //     this.idMovimentoCaixa = idMovimentoCaixa;
+    // }
 
-    public Integer getNumeroMovimento() {
-        return numeroMovimento;
-    }
+    // public Integer getNumeroMovimento() {
+    //     return numeroMovimento;
+    // }
 
-    public void setNumeroMovimento(Integer numeroMovimento) {
-        this.numeroMovimento = numeroMovimento;
-    }
+    // public void setNumeroMovimento(Integer numeroMovimento) {
+    //     this.numeroMovimento = numeroMovimento;
+    // }
 
-    public LocalDate getDataMovimento() {
-        return dataMovimento;
-    }
+    // public LocalDate getDataMovimento() {
+    //     return dataMovimento;
+    // }
 
-    public void setDataMovimento(LocalDate dataMovimento) {
-        this.dataMovimento = dataMovimento;
-    }
+    // public void setDataMovimento(LocalDate dataMovimento) {
+    //     this.dataMovimento = dataMovimento;
+    // }
 
-    public String getDescricao() {
-        return descricao;
-    }
+    // public String getDescricao() {
+    //     return descricao;
+    // }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+    // public void setDescricao(String descricao) {
+    //     this.descricao = descricao;
+    // }
 
-    public String getTipoMovimento() {
-        return tipoMovimento;
-    }
+    // public String getTipoMovimento() {
+    //     return tipoMovimento;
+    // }
 
-    public void setTipoMovimento(String tipoMovimento) {
-        this.tipoMovimento = tipoMovimento;
-    }
+    // public void setTipoMovimento(String tipoMovimento) {
+    //     this.tipoMovimento = tipoMovimento;
+    // }
 
-    public double getValor() {
-        return valor;
-    }
+    // public double getValor() {
+    //     return valor;
+    // }
 
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
+    // public void setValor(double valor) {
+    //     this.valor = valor;
+    // }
 
 }
